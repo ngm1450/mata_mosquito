@@ -2,7 +2,7 @@
 var altura = 0
 var largura = 0
 var vidas = 1
-var tempo = 15
+var tempo = 5
 
 function ajustarTamanhoPalcoJogo() {
 	altura = window.innerHeight
@@ -14,11 +14,11 @@ ajustarTamanhoPalcoJogo()
 
 var cronometro = setInterval(function(){
 
-    tempo--;
+    tempo -= 1;
     if(tempo < 0){
-        alert('Vitória')
         clearInterval(cronometro)
         clearInterval(mosca)
+        window.location.href = 'vitoria.html'
     } else{
         document.getElementById('cronometro').innerHTML = tempo
     }
