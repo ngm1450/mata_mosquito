@@ -16,8 +16,8 @@ function posicionarRandomicamente(){
     if( document.getElementById('mosquito')){
         document.getElementById('mosquito').remove()
     }
-    var posicaoX = Math.floor(Math.random()*largura) - 90
-    var posicaoY = Math.floor(Math.random()*altura) - 90
+    var posicaoX = Math.floor(Math.random()*largura) 
+    var posicaoY = Math.floor(Math.random()*altura) 
 
     popsiçãoX = posicaoX < 0 ? 0 : posicaoX
     popsiçãoY = posicaoY < 0 ? 0 : posicaoY

@@ -15,7 +15,22 @@
 
     <body onresize="ajustarTamanhoPalcoJogo()">
              
-        <script>
+        <div class="painel">
+
+            <div class="vidas">
+                <img src="img/coracao_vazio.png">
+                <img src="img/coracao_cheio.png">
+                <img src="img/coracao_cheio.png">
+            </div>
+            
+            <div class="cronometro">
+                Tempo restante: ?
+            </div>
+
+       
+        </div>
+       
+       <script>
             setInterval( function(){
                 posicionarRandomicamente()
             }, 1000)
