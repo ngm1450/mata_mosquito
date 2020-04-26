@@ -15,13 +15,15 @@ function posicionarRandomicamente(){
     
     //remover o mosquito anterior, caso exista
     if( document.getElementById('mosquito')){
+        
         document.getElementById('mosquito').remove()
 
         if(vidas > 3){
-            alert()
+            window.location.href = 'fim_de_jogo.html'
+        } else {
+            document.getElementById('v' + vidas).src="img/coracao_vazio.png"
+            vidas++
         }
-        document.getElementById('v' + vidas).src="img/coracao_vazio.png"
-        vidas++
     }
     var posicaoX = Math.floor(Math.random()*largura) 
     var posicaoY = Math.floor(Math.random()*altura) 
