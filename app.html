@@ -15,7 +15,11 @@
 
     <body onresize="ajustarTamanhoPalcoJogo()">
              
-        <script>posicionarRandomicamente()</script>
+        <script>
+            setInterval( function(){
+                posicionarRandomicamente()
+            }, 1000)
+        </script>
 
 
 
