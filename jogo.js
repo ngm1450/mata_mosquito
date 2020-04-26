@@ -11,7 +11,7 @@ nivel = nivel.replace('?','')
 
 
 if(nivel === 'normal'){
-    criarMosquitoTempo = 15000
+    criarMosquitoTempo = 1500
 } else if(nivel === 'dificil'){
     criarMosquitoTempo = 1000
 } else if(nivel === 'chucknorris'){
