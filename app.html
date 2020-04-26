@@ -24,16 +24,18 @@
             </div>
             
             <div class="cronometro">
-                Tempo restante: ?
+                Tempo restante: <span id="cronometro"></span>
             </div>
 
        
         </div>
        
        <script>
-            setInterval( function(){
+            document.getElementById('cronometro').innerHTML = tempo
+           
+            var mosca = setInterval( function(){
                 posicionarRandomicamente()
-            }, 2000)
+            }, 1000)
         </script>
 
 
